@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Drag lines to render them</title>
+
+		<link rel="stylesheet" type="text/css" href="example.css">
+
+		<script src="libs/gl-matrix-min.js"></script>
+		<script src="libs/twgl.min.js"></script>
+		<script src="libs/knockout.js"></script>
+		<script src="libs/stats.js"></script>
+		<script src="boilerplate.js"></script>
+		<script src="LinesRenderer.js"></script>
+		<script src="app.js"></script>
+	</head>
+	
+	<body>
+		<canvas id='the-canvas' style="z-index: 2; width: 100%; height: 100vh; position: fixed;"
+				data-bind="event: {mousedown: mouseDown, mouseup: mouseUp, mousemove: mouseMove}"></canvas>
+		<div class="stats" data-bind="self: statsElement">
+		</div>
+		<div class="uibar">
+			<div>
+				Drag to create lines.
+			</div>
+			<div>
+				<button data-bind="click: clearLines">Clear Lines</button><br/>
+				<span data-bind="text: numberOfLines"></span> lines constructed from <span data-bind="text: numberOfElements"></span> points.<br/>
+				Wiggle lines: <input type="checkbox" data-bind="checked: isWiggleLines" /> <br/>
+				Render Wireframe: <input type="checkbox" data-bind="checked: isRenderWireFrame" /><br/>
+			</div>
+		</div>
+	</body>
+	
+</html>

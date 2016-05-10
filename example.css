@@ -1,0 +1,37 @@
+body {
+	font-family: arial;
+	font-size: 14px;
+
+	background-color: black;
+	background: black;
+	margin: 0;
+	overflow: hidden;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+.stats {
+	position: fixed;
+	margin: 10px;
+	bottom: 0px;
+	left: 0px;
+	color: white;
+	font-size: 10px;
+	text-align: center;
+	z-index: 5;
+}
+
+.uibar {
+	color: white;
+	position: fixed;
+	margin: 10px;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}

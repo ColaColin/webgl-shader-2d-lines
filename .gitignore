@@ -1,0 +1,36 @@
+*.class
+*.log
+
+node/node_modules/
+node_modules
+
+frontend/dist/*
+
+#eclipse
+.cache
+.classpath
+.project
+.settings
+.worksheet/*
+
+# sbt specific
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+
+#jekyll
+_site
+.DS_Store
+.jekyll
+.jekyll-metadata
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
